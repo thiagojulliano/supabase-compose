@@ -85,6 +85,7 @@ services:
       - .env
     
     image: supabase/gotrue:v2.172.1
+    
     restart: unless-stopped
     healthcheck:
       test:
