@@ -79,8 +79,6 @@ services:
       /docker-entrypoint.sh kong docker-start'
 
   auth:
-    container_name: supabase-auth
-
     env_file:
       - .env
     
