@@ -13,7 +13,7 @@ services:
     image: supabase/studio:2025.05.19-sha-3487831
 
     env_file:
-    - .env
+      - .env
     
     restart: unless-stopped
     healthcheck:
@@ -192,7 +192,7 @@ services:
     image: supabase/realtime:v2.34.47
 
     env_file:
-    - .env
+      - .env
     
     restart: unless-stopped
     depends_on:
@@ -344,7 +344,7 @@ services:
     restart: unless-stopped
 
     ports:
-    - "5432:5432"
+      - "5432:5432"
 
     volumes:
       - ./volumes/db/realtime.sql:/docker-entrypoint-initdb.d/migrations/99-realtime.sql:Z
