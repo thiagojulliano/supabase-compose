@@ -342,7 +342,7 @@ services:
     restart: unless-stopped
 
     ports:
-      - "5432:5432"
+      - "5433:5432"
 
     volumes:
       - ./volumes/db/realtime.sql:/docker-entrypoint-initdb.d/migrations/99-realtime.sql:Z
